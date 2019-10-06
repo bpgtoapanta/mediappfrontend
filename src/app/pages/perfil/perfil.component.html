@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Usuario: {{usuario.nombre}}</h1>
+<div mat-dialog-content>
+  <p>Roles:</p>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let r of usuario.roles">{{r}}</mat-list-item>
+  </mat-list>
+</div>
+
+<div mat-dialog-actions style="float: right">
+  <button mat-raised-button color="primary" (click)="onNoClick()">Aceptar</button>
+</div>
